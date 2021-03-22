@@ -77,8 +77,7 @@
         //Deposit Button event handler
         const depositBtn = document.getElementById("addDeposit")
         depositBtn.addEventListener("click",function(){
-        const depositNumber = getInputNumber("depositAmount")
-        
+        const depositNumber = getInputNumber("depositAmount");
        
         updateSpanText("currentDeposit",depositNumber);
 
@@ -95,10 +94,9 @@
        })
       
        function getInputNumber(id){
-        const amount = document.getElementById(id).value
-           console.log (amount);
-           const amountNumber = parseFloat(withdrawAmount);
-           return amountNumber
+         const amount = document.getElementById(id).value
+        const amountNumber = parseFloat(amount);
+        return amountNumber
        }
 
     function updateSpanText(id, depositNumber){
